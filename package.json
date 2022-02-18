@@ -1,7 +1,7 @@
 {
-  "name": "production-ready-api-test",
+  "name": "production-ready-calculator-api",
   "version": "0.1.5",
-  "description": "This is just a test to create a production ready api with compile tests to practice and learn how to do it",
+  "description": "This is a sample project of how to create a production ready serverless api with compile tests",
   "main": "app.ts",
   "scripts": {
     "test": "jest",
@@ -13,7 +13,20 @@
     "type": "git",
     "url": "git+https://github.com/OrenVilderman/production-ready-api-test.git"
   },
-  "author": "",
+  "keywords": [
+    "nodejs",
+    "express",
+    "typescript",
+    "javascript",
+    "unit-testing",
+    "jest",
+    "routing",
+    "test-coverage",
+    "production-ready",
+    "netlify",
+    "serverless"
+  ],
+  "author": "Oren Vilderman",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/OrenVilderman/production-ready-api-test/issues"
