@@ -1,6 +1,7 @@
 # production-ready-calculator-api
 This is a sample project of how to create a production ready serverless api with compile tests
 
+## Server Status
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9d03ef8a-c8a3-4cfd-b2e4-225d3cf4d5f0/deploy-status)](https://app.netlify.com/sites/production-ready-calculator/deploys)
 
 ## Installation

@@ -31,4 +31,11 @@ describe('Negative Tests Suite', () => {
     expect(calculateResponse.type).to.equal('text/html');
     expect(calculateResponse.text).to.include('Oops, something went wrong...');
   });
+
+  it('Redirecting Found', async () => {
+    const RedirectResponse = await request(app).get('/')
+    expect(RedirectResponse.status).to.equal(302);
+    expect(RedirectResponse.type).to.equal('text/plain');
+    expect(RedirectResponse.text).to.include('Found. Redirecting to index.html');
+  });
 });
