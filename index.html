@@ -417,7 +417,7 @@
 	</ul>
 	<h3 id="response">Response</h3>
 	<ul>
-		<li><strong>TEXT</strong> - Text contian the result of the calculation</li>
+		<li><strong>TEXT</strong> - Text contain the result of the calculation</li>
 	</ul>
 	<h3 id="errors">Errors</h3>
 	<ul>
@@ -442,9 +442,26 @@
 	<p><code>200 OK</code></p>
 	<pre class="hljs"><code><div>8
 </div></code></pre>
-	<h2 id="unit-tests-cover-status">Unit tests cover status:</h2>
+	<h2 id="unit-tests-cover-status">Unit tests cover status</h2>
 	<img alt="Image_Of_Unit_Tests_Cover_Report" src="images\Unit_Tests_Cover.png"
 		style="min-width:800px; width:1200px;" />
+	<h2 id="pull-request--contribute">Pull Request / Contribute</h2>
+	<p>PRs are only possible from a separate branch.</p>
+	<p>Before submitting a PR please validate lint, unit tests, test cover and version update:</p>
+	<ul>
+		<li>You should fix linting issues by running <code>npm run fix-lint</code> - Make sure to fix every error or
+			warning.</li>
+		<li>You should run unit tests by running <code>npm test</code> - Make sure that all the tests pass.</li>
+		<li>The test coverage should remain at <strong>100%</strong> :
+			<code>100% Statements 70/70 | 100% Branches 12/12 | 100% Functions 9/9 | 100% Lines 65/65</code> - Make sure
+			to add tests if needed.</li>
+		<li><strong>Always</strong> increment* the version, according to the specifications below.</li>
+	</ul>
+	<h2 id="versions">Versions</h2>
+	<p>Run <code>npm version patch</code> in cases of bug fixes and small modifications.</p>
+	<p>Run <code>npm version minor</code> in cases of functionality <strong>non-breaking</strong> changes.</p>
+	<p>Run <code>npm version major</code> in cases of important functionality or any <strong>breaking</strong> changes.
+	</p>
 
 </body>
 
