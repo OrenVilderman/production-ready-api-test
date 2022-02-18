@@ -15,7 +15,7 @@ app.use('/', (request: Request, response: Response, next) => {
 app.use('/api/V0.1', indexRouter);
 
 app.get('/', (request: Request, response: Response) => {
-   response.redirect('index.html');
+  response.redirect('index.html');
 });
 
 app.all('*', (request: Request, response: Response) => {

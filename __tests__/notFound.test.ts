@@ -26,7 +26,7 @@ describe('Not Found Tests Suite', () => {
 
   it('In Calculate', async () => {
     const calculateResponse = await request(app).get('/api/V0.1/calculate');
-    expect(calculateResponse.status).to.equal(404);
+    expect(calculateResponse.status).to.equal(401);
     expect(calculateResponse.type).to.equal('text/html');
     expect(calculateResponse.text).to.include('<h1>Calculation not possible</h1><p>For this uri: /, with method of: GET</p>');
   });
