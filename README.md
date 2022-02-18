@@ -84,6 +84,8 @@ Before submitting a PR please validate lint, unit tests, test cover and version 
 - The test coverage should remain at **100%** : `100% Statements 70/70 | 100% Branches 12/12 | 100% Functions 9/9 | 100% Lines 65/65` - Make sure to add tests if needed.
 - **Always** increment* the version, according to the specifications below.
 
+*The correct way to increment the version is by using the correct npm script that represent the change you are introducing
+
 ## Versions
 Run `npm version patch` in cases of bug fixes and small modifications.
 

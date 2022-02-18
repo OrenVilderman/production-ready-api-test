@@ -173,13 +173,21 @@
 			line-height: 1.357em;
 		}
 
+		p code,
+		li code {
+			padding: .2em .4em;
+			border-radius: 6px;
+			background-color: gainsboro;
+			color: black !important;
+		}
+
 		body.wordWrap pre {
 			white-space: pre-wrap;
 		}
 
 		pre:not(.hljs),
 		pre.hljs code>div {
-			padding: 16px;
+			padding: 4px;
 			border-radius: 3px;
 			overflow: auto;
 		}
@@ -293,6 +301,7 @@
 			overflow-x: auto;
 			color: #4d4d4c;
 			padding: 0.5em;
+			width: max-content;
 		}
 
 		.hljs-emphasis {
@@ -458,9 +467,12 @@
 		<li>You should run unit tests by running <code>npm test</code> - Make sure that all the tests pass.</li>
 		<li>The test coverage should remain at <strong>100%</strong> :
 			<code>100% Statements 70/70 | 100% Branches 12/12 | 100% Functions 9/9 | 100% Lines 65/65</code> - Make sure
-			to add tests if needed.</li>
+			to add tests if needed.
+		</li>
 		<li><strong>Always</strong> increment* the version, according to the specifications below.</li>
 	</ul>
+	<p>*The correct way to increment the version is by using the correct npm script that represent the change you are
+		introducing</p>
 	<h2 id="versions">Versions</h2>
 	<p>Run <code>npm version patch</code> in cases of bug fixes and small modifications.</p>
 	<p>Run <code>npm version minor</code> in cases of functionality <strong>non-breaking</strong> changes.</p>
