@@ -25,12 +25,12 @@ jobs:
 
       # NPM Continuous Integration Install
       - name: NPM Continuous Integration
-      - run: npm ci
+        run: npm ci
 
       # Linter Tests
       - name: Linter Tests
-      - run: npm run lint-test
+        run: npm run lint-test
 
       # Jest Cover Tests
       - name: Jest Cover Tests
-      - run: npm test
+        run: npm test
