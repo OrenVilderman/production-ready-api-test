@@ -6,7 +6,7 @@ This is a sample project of how to create a production ready serverless api with
 
 ## GitHub Repository
 [![`GitHub`](https://img.shields.io/github/package-json/v/OrenVilderman/production-ready-calculator-api?style=flat)](https://github.com/OrenVilderman/production-ready-calculator-api.git)
-
+[![Tests](https://github.com/OrenVilderman/production-ready-calculator-api/actions/workflows/test.yml/badge.svg)](https://github.com/OrenVilderman/production-ready-calculator-api/actions/workflows/test.yml)
 
 ## Installation
 Install by running 
