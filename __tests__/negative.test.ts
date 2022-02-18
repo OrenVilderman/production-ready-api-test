@@ -27,7 +27,7 @@ describe('Negative Tests Suite', () => {
       secondNumber: 0,
       operator: 'O',
     });
-    expect(calculateResponse.status).to.equal(500);
+    expect(calculateResponse.status).to.equal(501);
     expect(calculateResponse.type).to.equal('text/html');
     expect(calculateResponse.text).to.include('Oops, something went wrong...');
   });
