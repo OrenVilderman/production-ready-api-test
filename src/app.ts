@@ -12,7 +12,7 @@ app.use('/', (request: Request, response: Response, next) => {
   next();
 });
 
-app.use('/api/V0.1', indexRouter);
+app.use('/api/V0.1', indexRouter)
 
 app.get('/', (request: Request, response: Response) => {
   response.redirect('index.html');
