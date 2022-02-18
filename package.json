@@ -5,10 +5,12 @@
   "main": "app.ts",
   "scripts": {
     "test": "jest",
+    "build-tests": "npm run lint-test",
     "start": "ts-node src/app.ts",
     "dev": "netlify dev",
     "start-dev": "nodemon --exec npx ts-node src/app.ts",
-    "fix-lint": "npx eslint --ext .ts . --fix"
+    "lint-test": "eslint --ext .ts .",
+    "fix-lint": "eslint --ext .ts . --fix"
   },
   "repository": {
     "type": "git",
