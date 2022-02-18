@@ -27,6 +27,9 @@ export class CalculationService {
       default:
         throw new Error(`Non valid operator: ${operator}`);
     }
-    return output.toFixed(3);
+    if (output % 1 != 0) {
+      return output.toFixed(3);
+    }
+    return output.toString();
   }
 }

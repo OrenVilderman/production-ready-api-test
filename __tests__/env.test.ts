@@ -1,7 +1,7 @@
 import request from 'supertest';
 import { expect } from 'chai';
 import { describe, it, afterAll } from '@jest/globals';
-import server from '../app';
+import server from '../src/app';
 
 process.env.PORT = undefined;
 
