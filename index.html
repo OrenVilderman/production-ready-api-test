@@ -365,9 +365,69 @@ code {
           : 'default'
     });
   </script>
-<h1 id="production-ready-api-test">production-ready-api-test</h1>
-<p>This is just a test to create a production ready api with compile tests to practice and learn how to do it</p>
+<h1 id="production-ready-calculator-api">production-ready-calculator-api</h1>
+<p>This is a sample project of how to create a production ready serverless api with compile tests</p>
 <p><a href="https://app.netlify.com/sites/production-ready-calculator/deploys"><img src="https://api.netlify.com/api/v1/badges/9d03ef8a-c8a3-4cfd-b2e4-225d3cf4d5f0/deploy-status" alt="Netlify Status"></a></p>
+<h2 id="installation">Installation</h2>
+<p>Install by running</p>
+<pre class="hljs"><code><div>npm install
+</div></code></pre>
+<h2 id="start-the-server-with-debug-optional-to-use-f5-before-running-the-script">Start the server with debug* (Optional to use F5 before running the script)</h2>
+<p>Start the server by running:</p>
+<pre class="hljs"><code><div>npm start
+</div></code></pre>
+<p>Start with nodemon by running:</p>
+<pre class="hljs"><code><div>npm run start-dev
+</div></code></pre>
+<h2 id="start-the-server-with-the-netlify-runner-in-dev-mode-debug-is-also-optional-here-with-f5">Start the server with the netlify runner in dev mode (Debug is also optional here with F5)</h2>
+<p>Start the tests by running:</p>
+<pre class="hljs"><code><div>npm run dev
+</div></code></pre>
+<h2 id="start-the-jest-coverage-tests">Start the jest coverage tests</h2>
+<p>Start the tests by running:</p>
+<pre class="hljs"><code><div>npm test
+</div></code></pre>
+<h1 id="api-design-documentation">API Design Documentation</h1>
+<p><code>/api/V0.1</code></p>
+<h2 id="post">POST</h2>
+<p><code>POST /api/V0.1/calculate</code></p>
+<h3 id="query-parameters">Query Parameters</h3>
+<ul>
+<li><strong>non</strong></li>
+</ul>
+<h3 id="body">Body</h3>
+<ul>
+<li><strong>non</strong></li>
+</ul>
+<h3 id="response">Response</h3>
+<ul>
+<li><strong>TEXT</strong> - Text contian the result of the calculation</li>
+</ul>
+<h3 id="errors">Errors</h3>
+<ul>
+<li><strong>404</strong> - Not Found - With information about the uri and method used</li>
+<li><strong>500</strong> - Internal Server Error - With text &quot;Oops, something went wrong...&quot;</li>
+</ul>
+<h3 id="example-request">Example Request</h3>
+<pre class="hljs"><code><div>request(app)
+	.post(<span class="hljs-string">'/api/V0.1/calculate'</span>)
+</div></code></pre>
+<h3 id="example-response">Example Response</h3>
+<p><code>200 OK</code></p>
+<h3 id="example-request">Example Request</h3>
+<pre class="hljs"><code><div>request(app).post(<span class="hljs-string">'/api/V0.1/calculate'</span>)
+    .send({
+        firstNumber: <span class="hljs-number">2</span>,
+        secondNumber: <span class="hljs-number">6</span>,
+        operator: <span class="hljs-string">'+'</span>,
+    });
+</div></code></pre>
+<h3 id="example-response">Example Response</h3>
+<p><code>200 OK</code></p>
+<pre class="hljs"><code><div>8
+</div></code></pre>
+<h2 id="unit-tests-cover-status">Unit tests cover status:</h2>
+<img alt="Image_Of_Unit_Tests_Cover_Report" src="images\Unit_Tests_Cover.png" style="max-width:750px;"/>
 
 </body>
 </html>
