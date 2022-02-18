@@ -8,5 +8,6 @@ module.exports = {
     "**/*.{jsx,ts}",
     "!**/node_modules/**",
     "!**/coverage/**",
+    "!**/functions/**",
   ],
 };
