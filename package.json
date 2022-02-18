@@ -21,7 +21,9 @@
   "homepage": "https://github.com/OrenVilderman/production-ready-api-test#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "netlify-lambda": "^2.0.15",
+    "serverless-http": "^2.7.0"
   },
   "devDependencies": {
     "@jest/globals": "^27.5.1",
