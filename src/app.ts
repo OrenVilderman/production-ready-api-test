@@ -1,5 +1,6 @@
 import express, { Application, Request, Response } from 'express';
 import 'dotenv/config';
+import * as path from 'path';
 import indexRouter from './routes';
 
 const PORT: number = Number(process.env.PORT) || 5000;
@@ -13,6 +14,10 @@ app.use('/', (request: Request, response: Response, next) => {
 });
 
 app.use('/api/V0.1', indexRouter);
+
+app.get('/', (request: Request, response: Response) => {
+  response.sendFile(path.join(process.cwd(), 'dist/index.html'));
+});
 
 app.all('*', (request: Request, response: Response) => {
   console.log(`Page not found for requset: ${request.url}, with method of: ${request.method}`);
