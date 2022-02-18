@@ -80,7 +80,8 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
-dist
+# Add dist to git sinc this is how netlify site picture can be changed to something more relevent to this project
+# dist
 
 # Gatsby files
 .cache/
