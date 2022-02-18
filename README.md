@@ -2,7 +2,11 @@
 This is a sample project of how to create a production ready serverless api with compile tests
 
 ## Server Status
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9d03ef8a-c8a3-4cfd-b2e4-225d3cf4d5f0/deploy-status)](https://app.netlify.com/sites/production-ready-calculator/deploys)
+[![`Netlify` Status](https://api.netlify.com/api/v1/badges/9d03ef8a-c8a3-4cfd-b2e4-225d3cf4d5f0/deploy-status)](https://app.netlify.com/sites/production-ready-calculator/deploys)
+
+## GitHub Repository
+[![`GitHub`](https://img.shields.io/github/package-json/v/OrenVilderman/production-ready-calculator-api?style=flat)](https://github.com/OrenVilderman/production-ready-calculator-api.git)
+
 
 ## Installation
 Install by running 
@@ -67,4 +71,4 @@ request({
 ```
 
 ## Unit tests cover status:
-<img alt="Image_Of_Unit_Tests_Cover_Report" src="images\Unit_Tests_Cover.png" style="max-width:750px;"/>
+<img alt="Image_Of_Unit_Tests_Cover_Report" src="images\Unit_Tests_Cover.png" style="min-width:800px; width:1200px;"/>
