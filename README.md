@@ -3,14 +3,16 @@ This is a sample project of how to create a production ready serverless api with
 
 ## Server Status
 [![`Netlify` Status](https://api.netlify.com/api/v1/badges/9d03ef8a-c8a3-4cfd-b2e4-225d3cf4d5f0/deploy-status)](https://app.netlify.com/sites/production-ready-calculator/deploys)
+[![`Calculator` Status](https://img.shields.io/website?logo=netlify&up_color=grass&up_message=online&url=https%3A%2F%2Fproduction-ready-calculator-api.netlify.app%2F)](https://production-ready-calculator-api.netlify.app/)
+
 
 ## GitHub Repository
-[![`GitHub`](https://img.shields.io/github/package-json/v/OrenVilderman/production-ready-calculator-api?style=flat)](https://github.com/OrenVilderman/production-ready-calculator-api.git)
+[![`GitHub`](https://img.shields.io/github/package-json/v/OrenVilderman/production-ready-calculator-api?logo=github)](https://github.com/OrenVilderman/production-ready-calculator-api.git)
 [![Tests](https://github.com/OrenVilderman/production-ready-calculator-api/actions/workflows/test.yml/badge.svg)](https://github.com/OrenVilderman/production-ready-calculator-api/actions/workflows/test.yml)
 
 ## Installation
 Install by running 
-``` 
+```
 npm install
 ```
 
