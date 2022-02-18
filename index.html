@@ -426,18 +426,18 @@
 		<li><strong>500</strong> - Internal Server Error - With text &quot;Oops, something went wrong...&quot;</li>
 	</ul>
 	<h3 id="example-request">Example Request</h3>
-	<pre class="hljs"><code><div>request(app)
-	.post(<span class="hljs-string">'/api/V0.1/calculate'</span>)
-</div></code></pre>
-	<h3 id="example-response">Example Response</h3>
-	<p><code>200 OK</code></p>
-	<h3 id="example-request">Example Request</h3>
-	<pre class="hljs"><code><div>request(app).post(<span class="hljs-string">'/api/V0.1/calculate'</span>)
-    .send({
-        firstNumber: <span class="hljs-number">2</span>,
-        secondNumber: <span class="hljs-number">6</span>,
-        operator: <span class="hljs-string">'+'</span>,
-    });
+	<pre class="hljs"><code><div>request({
+  method: <span class="hljs-string">'POST'</span>,
+  url: <span class="hljs-string">'https://production-ready-calculator-api.netlify.app/api/V0.1/calculate'</span>,
+  headers: {
+    <span class="hljs-string">'Content-Type'</span>: <span class="hljs-string">'application/json'</span>
+  },
+  body: <span class="hljs-built_in">JSON</span>.stringify({
+    firstNumber: <span class="hljs-number">2</span>,
+    secondNumber: <span class="hljs-number">6</span>,
+    operator: <span class="hljs-string">'+'</span>
+  },
+});
 </div></code></pre>
 	<h3 id="example-response">Example Response</h3>
 	<p><code>200 OK</code></p>

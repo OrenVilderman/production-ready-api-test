@@ -47,20 +47,18 @@ npm test
 - **500** - Internal Server Error - With text "Oops, something went wrong..."
 ### Example Request
 ```typescript
-request(app)
-	.post('/api/V0.1/calculate')
-```
-### Example Response
-`200 OK`
-
-### Example Request
-```typescript
-request(app).post('/api/V0.1/calculate')
-    .send({
-        firstNumber: 2,
-        secondNumber: 6,
-        operator: '+',
-    });
+request({
+  method: 'POST',
+  url: 'https://production-ready-calculator-api.netlify.app/api/V0.1/calculate',
+  headers: {
+    'Content-Type': 'application/json'
+  },
+  body: JSON.stringify({
+    firstNumber: 2,
+    secondNumber: 6,
+    operator: '+'
+  },
+});
 ```
 ### Example Response
 `200 OK`

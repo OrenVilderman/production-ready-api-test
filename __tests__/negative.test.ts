@@ -33,7 +33,7 @@ describe('Negative Tests Suite', () => {
   });
 
   it('Redirecting Found', async () => {
-    const RedirectResponse = await request(app).get('/')
+    const RedirectResponse = await request(app).get('/');
     expect(RedirectResponse.status).to.equal(302);
     expect(RedirectResponse.type).to.equal('text/plain');
     expect(RedirectResponse.text).to.include('Found. Redirecting to index.html');
