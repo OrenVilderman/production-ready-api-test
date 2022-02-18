@@ -16,7 +16,11 @@ app.use('/', (request: Request, response: Response, next) => {
 app.use('/api/V0.1', indexRouter);
 
 app.get('/', (request: Request, response: Response) => {
-  response.sendFile(path.join(process.cwd(), 'dist/index.html'));
+  let indexRoot = process.cwd();
+  if (indexRoot.includes('var/task/')) {
+    indexRoot = indexRoot.replace('var/task/', '');
+  }
+  response.sendFile(path.join(indexRoot, 'dist/index.html'));
 });
 
 app.all('*', (request: Request, response: Response) => {
