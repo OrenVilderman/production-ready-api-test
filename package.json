@@ -1,6 +1,6 @@
 {
   "name": "production-ready-calculator-api",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "This is a sample project of how to create a production ready serverless api with compile tests",
   "main": "app.ts",
   "scripts": {
