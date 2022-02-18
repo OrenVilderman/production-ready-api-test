@@ -1,6 +1,6 @@
 {
   "name": "production-ready-api-test",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "This is just a test to create a production ready api with compile tests to practice and learn how to do it",
   "main": "app.ts",
   "scripts": {
