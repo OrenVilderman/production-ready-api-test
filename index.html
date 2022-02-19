@@ -462,7 +462,7 @@
 	<p>PRs are only possible from a separate branch.</p>
 	<p>Before submitting a PR please validate lint, unit tests, test cover and version update:</p>
 	<ul>
-		<li>You should fix linting issues by running <code>npm run fix-lint</code> - Make sure to fix every error or
+		<li>You should fix linting issues by running <code>npm run fix-lint</code> - Make sure to fix every error and
 			warning.</li>
 		<li>You should run unit tests by running <code>npm test</code> - Make sure that all the tests pass.</li>
 		<li>The test coverage should remain at <strong>100%</strong> :
@@ -470,12 +470,15 @@
 			to add tests if needed.
 		</li>
 		<li><strong>Always</strong> increment* the version, according to the specifications below.</li>
+		<li>Adding a unit test that uncover a bug is very welcome - I will create a fix for the bug that will allow you
+			to pull and merge your unit test ASAP.</li>
 	</ul>
 	<p>*The correct way to increment the version is by using the correct npm script that represent the change you are
 		introducing</p>
 	<h2 id="versions">Versions</h2>
-	<p>Run <code>npm version patch</code> in cases of bug fixes and small modifications.</p>
-	<p>Run <code>npm version minor</code> in cases of functionality <strong>non-breaking</strong> changes.</p>
+	<p>Run <code>npm version patch</code> in cases of bug fixes or small modifications.</p>
+	<p>Run <code>npm version minor</code> in cases of functionality changes with <strong>non-breaking</strong> changes.
+	</p>
 	<p>Run <code>npm version major</code> in cases of important functionality or any <strong>breaking</strong> changes.
 	</p>
 
