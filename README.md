@@ -45,12 +45,19 @@ npm test
 ### Query Parameters
 - **non**
 ### Body
-- **non**
+- **firstNumber** - A number (large inputs are limited to exponent of 20, e+20)
+- **secondNumber** - A number (large inputs are limited to exponent of 20, e+20)
+- **operator** - A mathematical operator as string (+,-,*,/)
 ### Response
 - **TEXT** - Text contain the result of the calculation
 ### Errors
 - **404** - Not Found - With information about the uri and method used
 - **500** - Internal Server Error - With text "Oops, something went wrong..."
+### For developers
+- **Error logs** - The specific reasons for server errors (500) are detailed in informative logs
+			that are not exposed by the api
+- **Rate Limit** - The rate limit is set to the default values of Netlify (200/min)
+- **Access Control** - Is set to Public without any authentication (It is possible to enable OAuth2 authentication in the Netlify server settings)
 ### Example Request
 ```typescript
 request({

@@ -378,7 +378,8 @@
 		});
 	</script>
 	<h1 id="production-ready-calculator-api">production-ready-calculator-api</h1>
-	<p>This is a sample project of how to create a production ready serverless api with tests and continues integration process</p>
+	<p>This is a sample project of how to create a production ready serverless api with tests and continues integration
+		process</p>
 	<h2 id="server-status">Server Status</h2>
 	<p><a href="https://app.netlify.com/sites/production-ready-calculator/deploys"><img
 				src="https://api.netlify.com/api/v1/badges/9d03ef8a-c8a3-4cfd-b2e4-225d3cf4d5f0/deploy-status"
@@ -426,7 +427,9 @@
 	</ul>
 	<h3 id="body">Body</h3>
 	<ul>
-		<li><strong>non</strong></li>
+		<li><strong>firstNumber</strong> - A number (large inputs are limited to exponent of 20, e+20)</li>
+		<li><strong>secondNumber</strong> - A number (large inputs are limited to exponent of 20, e+20)</li>
+		<li><strong>operator</strong> - A mathematical operator as string (+,-,*,/)</li>
 	</ul>
 	<h3 id="response">Response</h3>
 	<ul>
@@ -436,6 +439,14 @@
 	<ul>
 		<li><strong>404</strong> - Not Found - With information about the uri and method used</li>
 		<li><strong>500</strong> - Internal Server Error - With text &quot;Oops, something went wrong...&quot;</li>
+	</ul>
+	<h3 id="for-developers">For developers</h3>
+	<ul>
+		<li><strong>Error logs</strong> - The specific reasons for server errors (500) are detailed in informative logs
+			that are not exposed by the api</li>
+		<li><strong>Rate Limit</strong> - The rate limit is set to the default values of Netlify (200/min)</li>
+		<li><strong>Access Control</strong> - Is set to Public without any authentication (It is possible to enable
+			OAuth2 authentication in the Netlify server settings)</li>
 	</ul>
 	<h3 id="example-request">Example Request</h3>
 	<pre class="hljs"><code><div>request({
