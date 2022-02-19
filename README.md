@@ -27,7 +27,7 @@ npm run start-dev
 ```
 
 ## Start the server with the netlify runner in dev mode (Debug is also optional here with F5)
-Start the tests by running:
+Start the server by running:
 ``` 
 npm run dev
 ```
