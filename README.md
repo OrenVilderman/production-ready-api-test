@@ -90,7 +90,7 @@ Before submitting a PR please validate lint, unit tests, test cover and version 
 - You should run unit tests by running `npm test` - Make sure that all the tests pass.
 - The test coverage should remain at **100%** : `100% Statements 76/76 | 100% Branches 18/18 | 100% Functions 9/9 | 100% Lines 71/71` - Make sure to add tests if needed.
 - **Always** increment* the version, according to the specifications below.
-- Adding a unit test that uncover a bug is very welcome - I will create a fix for the bug that will allow you to pull and merge your unit test ASAP.
+- Adding a unit test that uncovers a bug is very welcome - I will create a fix for the bug that will allow you to pull and merge your unit test ASAP.
 
 *The correct way to increment the version is by using the correct npm script that represent the change you are introducing
 
